@@ -1,6 +1,9 @@
-#
 #  updating the workflow permissions to read and write. This will allow the GitHub Actions workflow to create releases and upload assets as needed. The default option is Read repository contents and packages permissions only.
-#
+
+# Make sure you have created and pushed a tag that matches the pattern v*.*.*. For example:
+# git tag v1.0.0
+# git push origin v1.0.0
+
 name: Release
 
 on:
